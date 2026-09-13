@@ -33,7 +33,51 @@ manufacturing a verdict.
 
 ## Setup
 
-Setup instructions will be added as the project is scaffolded.
+### Prerequisites
+
+- Node.js (v18+)
+- npm
+
+### Backend
+
+```powershell
+cd backend
+npm install
+npm run dev
+```
+
+Runs on `http://localhost:5000`.
+
+### Frontend
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Runs on `http://localhost:5173`.
+
+### Environment Variables
+
+Both `frontend` and `backend` have `.env.example` files. Copy them to `.env` and fill in values:
+
+```powershell
+cd backend
+copy .env.example .env
+
+cd ../frontend
+copy .env.example .env
+```
+
+### Linting & Formatting
+
+```powershell
+npm run lint      # check for issues
+npm run format    # auto-format code
+```
+
+Run inside `frontend` or `backend` as needed.
 
 ## License
 
